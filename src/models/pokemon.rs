@@ -3,8 +3,9 @@
 /// 各ポケモンは名前、レベル、ステータス、使用できる技で構成
 #[derive(Clone, PartialEq)]
 pub struct Pokemon {
-    pub name: String,
+    pub name: &'static str,
     pub level: u8,
+    pub type_: Vec<&'static str>,
     pub status: Status,
     pub skills: Vec<Skill>,
 }

@@ -285,8 +285,9 @@ fn set_pokemon(pokemon_name: &str) -> Pokemon {
             let skill_list = set_skill_list(pokemon_name);
 
             selected_pokemon = Pokemon {
-                name: "ピカチュウ".to_string(),
+                name: "ピカチュウ",
                 level: 10,
+                type_: vec!["でんき"],
                 status: Status {
                     hp: BufToStatus { value: 30, buff: 0 },
                     atk: BufToStatus { value: 19, buff: 0 },
@@ -303,8 +304,9 @@ fn set_pokemon(pokemon_name: &str) -> Pokemon {
             let skill_list = set_skill_list(pokemon_name);
 
             selected_pokemon = Pokemon {
-                name: "メタグロス".to_string(),
+                name: "メタグロス",
                 level: 68,
+                type_: vec!["はがね", "エスパー"],
                 status: Status {
                     hp: BufToStatus { value: 255, buff: 0 },
                     atk: BufToStatus { value: 196, buff: 0 },
@@ -321,8 +323,9 @@ fn set_pokemon(pokemon_name: &str) -> Pokemon {
             let skill_list = set_skill_list(pokemon_name);
 
             selected_pokemon = Pokemon {
-                name: "ポッポ".to_string(),
+                name: "ポッポ",
                 level: 8,
+                type_: vec!["ノーマル", "ひこう"],
                 status: Status {
                     hp: BufToStatus { value: 25, buff: 0 },
                     atk: BufToStatus { value: 16, buff: 0 },
