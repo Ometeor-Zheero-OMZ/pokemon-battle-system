@@ -2,14 +2,14 @@ use crate::{models::trainer::Trainer, Pokemon};
 
 #[allow(dead_code)]
 pub trait TrainerActions {
-    fn new(name: &str, pokemons: Vec<Pokemon>) -> Self;
+    fn new(name: &'static str, pokemons: Vec<Pokemon>) -> Self;
     fn set_active_pokemon(&mut self, pokemon: Pokemon);
 }
 
 impl TrainerActions for Trainer {
-    fn new(name: &str, pokemons: Vec<Pokemon>) -> Self {
+    fn new(name: &'static str, pokemons: Vec<Pokemon>) -> Self {
         Trainer {
-            name: name.to_string(),
+            name: name,
             pokemons,
             active_pokemon: None,
         }

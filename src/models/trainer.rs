@@ -4,7 +4,7 @@ use crate::Pokemon;
 /// 
 /// トレーナ名、所持ポケモン、現在場に出しているポケモンで構成
 pub struct Trainer {
-    pub name: String,
+    pub name: &'static str,
     pub pokemons: Vec<Pokemon>,
     pub active_pokemon: Option<Pokemon>,
 }

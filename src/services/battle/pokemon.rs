@@ -46,6 +46,7 @@ impl PokemonActions for Pokemon {
         // 命中確率を計算
         if !self.is_hit(skill.accuracy) {
             print_letter_with_delay(&format!("{}には\n当たらなかった！", target.name));
+            thread::sleep(Duration::from_millis(1000));
             return;
         }
 

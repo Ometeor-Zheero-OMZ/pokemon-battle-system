@@ -240,7 +240,7 @@ fn set_trainer(trainer_name: &str) -> Trainer {
             let pokemon = set_pokemon("pikachu");
 
             Trainer {
-                name: "サトシ".to_string(),
+                name: "サトシ",
                 pokemons: vec![pokemon.clone()],
                 active_pokemon: Some(pokemon)
             }
@@ -249,7 +249,7 @@ fn set_trainer(trainer_name: &str) -> Trainer {
             let pokemon = set_pokemon("metagross");
 
             Trainer {
-                name: "ダイゴ".to_string(),
+                name: "ダイゴ",
                 pokemons: vec![pokemon.clone()],
                 active_pokemon: Some(pokemon)
             }
@@ -258,7 +258,7 @@ fn set_trainer(trainer_name: &str) -> Trainer {
             let pokemon = set_pokemon("pidgey");
 
             Trainer {
-                name: "たんぱんこぞうのミノル".to_string(),
+                name: "たんぱんこぞうのミノル",
                 pokemons: vec![pokemon.clone()],
                 active_pokemon: Some(pokemon)
             }
