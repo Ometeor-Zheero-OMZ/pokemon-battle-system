@@ -6,6 +6,7 @@ use crate::{
     models::pokemon::{BufToStatus, Pokemon, Skill, SkillType, StatusType, Target}
 };
 
+#[allow(dead_code)]
 pub trait PokemonActions {
     fn attack(&mut self, skill_idx: usize, target: &mut Pokemon);
     fn compute_physical_damage(&self, skill: &Skill, attacker: &Pokemon, target: &Pokemon) -> u8;

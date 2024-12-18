@@ -287,7 +287,7 @@ fn set_pokemon(pokemon_name: &str) -> Pokemon {
             selected_pokemon = Pokemon {
                 name: "ピカチュウ",
                 level: 10,
-                type_: vec!["でんき"],
+                type_: vec![PokemonType::Electric],
                 status: Status {
                     hp: BufToStatus { value: 30, buff: 0 },
                     atk: BufToStatus { value: 19, buff: 0 },
@@ -306,7 +306,7 @@ fn set_pokemon(pokemon_name: &str) -> Pokemon {
             selected_pokemon = Pokemon {
                 name: "メタグロス",
                 level: 68,
-                type_: vec!["はがね", "エスパー"],
+                type_: vec![PokemonType::Steel, PokemonType::Psychic],
                 status: Status {
                     hp: BufToStatus { value: 255, buff: 0 },
                     atk: BufToStatus { value: 196, buff: 0 },
@@ -325,7 +325,7 @@ fn set_pokemon(pokemon_name: &str) -> Pokemon {
             selected_pokemon = Pokemon {
                 name: "ポッポ",
                 level: 8,
-                type_: vec!["ノーマル", "ひこう"],
+                type_: vec![PokemonType::Normal, PokemonType::Flying],
                 status: Status {
                     hp: BufToStatus { value: 25, buff: 0 },
                     atk: BufToStatus { value: 16, buff: 0 },

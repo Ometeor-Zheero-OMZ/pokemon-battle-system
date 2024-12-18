@@ -5,7 +5,7 @@
 pub struct Pokemon {
     pub name: &'static str,
     pub level: u8,
-    pub type_: Vec<&'static str>,
+    pub type_: Vec<PokemonType>,
     pub status: Status,
     pub skills: Vec<Skill>,
 }
@@ -98,4 +98,57 @@ pub enum StatusType {
     SpAtk,
     SpDef,
     Spd,
+}
+
+/// ポケモンのタイプを表す列挙型
+/// 
+/// 各タイプ
+#[allow(dead_code)]
+#[derive(Clone, PartialEq)]
+pub enum PokemonType {
+    Normal,
+    Fire,
+    Water,
+    Electric,
+    Grass,
+    Ice,
+    Fighting,
+    Poison,
+    Ground,
+    Flying,
+    Psychic,
+    Bug,
+    Rock,
+    Ghost,
+    Dragon,
+    Dark,
+    Steel,
+    Fairy
+}
+
+/// ポケモンのタイプを文字列型に変換
+#[allow(dead_code)]
+impl PokemonType {
+    pub fn as_str(&self) -> &'static str {
+        match self {
+            PokemonType::Normal => "ノーマル",
+            PokemonType::Fire => "ほのお",
+            PokemonType::Water => "みず",
+            PokemonType::Electric => "でんき",
+            PokemonType::Grass => "くさ",
+            PokemonType::Ice => "こおり",
+            PokemonType::Fighting => "かくとう",
+            PokemonType::Poison => "どく",
+            PokemonType::Ground => "じめん",
+            PokemonType::Flying => "ひこう",
+            PokemonType::Psychic => "エスパー",
+            PokemonType::Bug => "むし",
+            PokemonType::Rock => "いわ",
+            PokemonType::Ghost => "ゴースト",
+            PokemonType::Dragon => "ドラゴン",
+            PokemonType::Dark => "あく",
+            PokemonType::Steel => "はがね",
+            PokemonType::Fairy => "フェアリー"
+        }
+    }
 }
