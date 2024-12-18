@@ -40,7 +40,7 @@ impl PokemonActions for Pokemon {
         };
 
         // テキスト演出
-        print_letter_with_delay(&format!("{}の{}！", self.name, skill.name));
+        print_letter_with_delay(&format!("{}の\n{}！", self.name, skill.name));
         thread::sleep(Duration::from_millis(1000));
 
         // 命中確率を計算

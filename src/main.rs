@@ -406,6 +406,9 @@ fn start_battle(self_: &mut Pokemon, enemy: &mut Pokemon) {
         clear_and_print_current_battle_status(&self_, &enemy);
         print_letter_with_delay(&format!("{}との　しょうぶに かった!", enemy.name));
     } else {
+        print_letter_with_delay(&format!("{}は　たおれた！", self_.name));
+        thread::sleep(Duration::from_millis(2000));
+        clear_and_print_current_battle_status(&self_, &enemy);
         print_letter_with_delay(&format!("めのまえが　まっくらに　なった"));
     }
 }
