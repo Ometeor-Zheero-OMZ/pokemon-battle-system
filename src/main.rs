@@ -79,7 +79,7 @@ fn select_random_enemy_pokemon() -> Pokemon {
     let pokemon_names = vec![
         "pikachu",
         "metagross",
-        "poppo",
+        "pidgey",
     ];
 
     // 乱数生成
@@ -178,7 +178,7 @@ fn set_skill_list(pokemon_name: &str) -> Vec<Skill> {
         
             vec![bullet_punch, earthquake, ice_punch, psychic_fangs]
         },
-        "poppo" => {
+        "pidgey" => {
             let thundershock = Skill {
                 name: "ゴッドバード",
                 base_atk: 120,
@@ -255,7 +255,7 @@ fn set_trainer(trainer_name: &str) -> Trainer {
             }
         }
         "short-pants-boy" => {
-            let pokemon = set_pokemon("poppo");
+            let pokemon = set_pokemon("pidgey");
 
             Trainer {
                 name: "たんぱんこぞうのミノル".to_string(),
@@ -319,7 +319,7 @@ fn set_pokemon(pokemon_name: &str) -> Pokemon {
                 skills: skill_list
             }
         }
-        "poppo" => {
+        "pidgey" => {
             let skill_list = set_skill_list(pokemon_name);
 
             selected_pokemon = Pokemon {
