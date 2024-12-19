@@ -1,0 +1,155 @@
+{
+    "tail_whip": {
+        "name": "しっぽをふる",
+        "element": "Normal",
+        "base_atk": 0,
+        "accuracy": 100,
+        "priority": 0,
+        "skill_effect": {
+            "status_effect": {
+                "target": "Def",
+                "effect_value": -1
+            },
+            "target": "Enemy"
+        },
+        "class": "ChangeStatus"
+    },
+    "thunder_shock": {
+        "name": "でんきショック",
+        "element": "Electric",
+        "base_atk": 40,
+        "accuracy": 100,
+        "priority": 0,
+        "skill_effect": null,
+        "class": "SpecialAttack"
+    },
+    "quick_attack": {
+        "name": "でんこうせっか",
+        "element": "Normal",
+        "base_atk": 40,
+        "accuracy": 100,
+        "priority": 2,
+        "skill_effect": null,
+        "class": "PhysicalAttack"
+    },
+    "tackle": {
+        "name": "たいあたり",
+        "element": "Normal",
+        "base_atk": 40,
+        "accuracy": 100,
+        "priority": 0,
+        "skill_effect": null,
+        "class": "PhysicalAttack"
+    },
+    "bullet_punch": {
+        "name": "バレットパンチ",
+        "element": "Steel",
+        "base_atk": 40,
+        "accuracy": 100,
+        "priority": 2,
+        "skill_effect": null,
+        "class": "PhysicalAttack"
+    },
+    "earthquake": {
+        "name": "じしん",
+        "element": "Ground",
+        "base_atk": 100,
+        "accuracy": 100,
+        "priority": 0,
+        "skill_effect": null,
+        "class": "PhysicalAttack"
+    },
+    "ice_punch": {
+        "name": "れいとうパンチ",
+        "element": "Ice",
+        "base_atk": 75,
+        "accuracy": 100,
+        "priority": 2,
+        "skill_effect": null,
+        "class": "PhysicalAttack"
+    },
+    "psychic_fangs": {
+        "name": "サイコファング",
+        "element": "Psychic",
+        "base_atk": 85,
+        "accuracy": 100,
+        "priority": 0,
+        "skill_effect": null,
+        "class": "PhysicalAttack"
+    },
+    "sky_attack": {
+        "name": "ゴッドバード",
+        "element": "Flying",
+        "base_atk": 140,
+        "accuracy": 90,
+        "priority": 0,
+        "skill_effect": null,
+        "class": "PhysicalAttack"
+    },
+    "growl": {
+        "name": "なきごえ",
+        "element": "Normal",
+        "base_atk": 0,
+        "accuracy": 100,
+        "priority": 0,
+        "skill_effect": {
+            "status_effect": {
+                "target": "Atk",
+                "effect_value": -1
+            },
+            "target": "Enemy"
+        },
+        "class": "ChangeStatus"
+    },
+    "horn_drill": {
+        "name": "つのドリル",
+        "element": "Normal",
+        "base_atk": 0,
+        "accuracy": 30,
+        "priority": 0,
+        "skill_effect": null,
+        "class": "OneHitKO"
+    },
+    "flail": {
+        "name": "じたばた",
+        "element": "Normal",
+        "base_atk": 60,
+        "accuracy": 100,
+        "priority": 0,
+        "skill_effect": null,
+        "class": "PhysicalAttack"
+    },
+    "rain_dance": {
+        "name": "あまごい",
+        "element": "Water",
+        "base_atk": 0,
+        "accuracy": 100,
+        "priority": 0,
+        "skill_effect": {
+            "status_effect": {
+                "target": "Field",
+                "effect_value": 100
+            },
+            "target": "Enemy"
+        },
+        "class": "ChangeStatus"
+    },
+    "surf": {
+        "name": "なみのり",
+        "element": "Water",
+        "base_atk": 95,
+        "accuracy": 100,
+        "priority": 0,
+        "skill_effect": null,
+        "class": "SpecialAttack"
+    },
+    "hyper_beam": {
+        "name": "はかいこうせん",
+        "element": "Normal",
+        "base_atk": 150,
+        "accuracy": 90,
+        "priority": 0,
+        "skill_effect": null,
+        "class": "SpecialAttack"
+    }
+}

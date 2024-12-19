@@ -1,0 +1,134 @@
+{
+    "0025" : {
+        "name": "ピカチュウ",
+        "level": 10,
+        "element": ["Electric"],
+        "status": {
+            "hp": {
+                "value": 35,
+                "buff": 0
+            },
+            "atk": {
+                "value": 55,
+                "buff": 0
+            },
+            "def": {
+                "value": 40,
+                "buff": 0
+            },
+            "sp_atk": {
+                "value": 50,
+                "buff": 0
+            },
+            "sp_def": {
+                "value": 50,
+                "buff": 0
+            },
+            "spd": {
+                "value": 90,
+                "buff": 0
+            },
+            "current_hp": 35
+        },
+        "skills": ["tail_whip", "thunder_shock", "quick_attack", "tackle"]
+    },
+    "0376" : {
+        "name": "メタグロス",
+        "level": 68,
+        "element": ["Steel", "Psychic"],
+        "status": {
+            "hp": {
+                "value": 80,
+                "buff": 0
+            },
+            "atk": {
+                "value": 135,
+                "buff": 0
+            },
+            "def": {
+                "value": 130,
+                "buff": 0
+            },
+            "sp_atk": {
+                "value": 95,
+                "buff": 0
+            },
+            "sp_def": {
+                "value": 90,
+                "buff": 0
+            },
+            "spd": {
+                "value": 70,
+                "buff": 0
+            },
+            "current_hp": 80
+        },
+        "skills": ["bullet_punch", "earthquake", "ice_punch", "psychic_fangs"]
+    },
+    "0016" : {
+        "name": "ポッポ",
+        "level": 8,
+        "element": ["Normal", "Flying"],
+        "status": {
+            "hp": {
+                "value": 40,
+                "buff": 0
+            },
+            "atk": {
+                "value": 45,
+                "buff": 0
+            },
+            "def": {
+                "value": 40,
+                "buff": 0
+            },
+            "sp_atk": {
+                "value": 35,
+                "buff": 0
+            },
+            "sp_def": {
+                "value": 35,
+                "buff": 0
+            },
+            "spd": {
+                "value": 56,
+                "buff": 0
+            },
+            "current_hp": 40
+        },
+        "skills": ["sky_attack", "growl", "quick_attack", "horn_drill"]
+    },
+    "0130" : {
+        "name": "ギャラドス",
+        "level": 44,
+        "element": ["Water", "Flying"],
+        "status": {
+            "hp": {
+                "value": 95,
+                "buff": 0
+            },
+            "atk": {
+                "value": 125,
+                "buff": 0
+            },
+            "def": {
+                "value": 79,
+                "buff": 0
+            },
+            "sp_atk": {
+                "value": 60,
+                "buff": 0
+            },
+            "sp_def": {
+                "value": 100,
+                "buff": 0
+            },
+            "spd": {
+                "value": 81,
+                "buff": 0
+            },
+            "current_hp": 95
+        },
+        "skills": ["flail", "rain_dance", "surf", "hyper_beam"]
+    }
+}

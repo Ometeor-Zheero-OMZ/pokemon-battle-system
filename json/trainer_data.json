@@ -1,0 +1,27 @@
+{
+    "satoshi": {
+        "name": "サトシ",
+        "pokemons": ["0025"],
+        "active_pokemon": "0025"
+    },
+    "daigo": {
+        "name": "ダイゴ",
+        "pokemons": ["0376"],
+        "active_pokemon": "0376"
+    },
+    "short_pants_boy": {
+        "name": "たんぱんこぞうのミノル",
+        "pokemons": ["0016"],
+        "active_pokemon": "0016"
+    },
+    "wataru": {
+        "name": "ワタル",
+        "pokemons": ["0130", "0149", "0006", "0142", "0149", "0149"],
+        "active_pokemon": "0130"
+    },
+    "acerola": {
+        "name": "アセロラ",
+        "pokemons": ["0770"],
+        "active_pokemon": "0770"
+    }
+}
