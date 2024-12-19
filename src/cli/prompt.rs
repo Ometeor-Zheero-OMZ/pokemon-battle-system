@@ -52,7 +52,6 @@ pub fn select_trainer(trainers: &mut [Trainer]) -> &mut Trainer {
 pub fn select_pokemon(trainer: &mut Trainer) {
     loop {
         clear_screen();
-        // print_letter_with_delay(&format!("選んだトレーナー: {}\n", trainer.name));
         println!("選んだトレーナー: {}\n", trainer.name);
         print_letter_with_delay("ポケモンを選んでください：\n");
         print_letter_with_delay("所持ポケモン：");
@@ -73,7 +72,8 @@ pub fn select_pokemon(trainer: &mut Trainer) {
             }
         };
 
-        trainer.set_active_pokemon(trainer.pokemons[choice.saturating_sub(1)].clone());
+        let selected_pokemon = trainer.pokemons.remove(choice.saturating_sub(1));
+        trainer.set_active_pokemon(selected_pokemon);
         return;
     }
 }
