@@ -65,7 +65,7 @@ pub fn print_letter_with_delay(text: &str) {
     for c in text.chars() {
         print!("{}", c);
         let _ = stdout().flush();
-        thread::sleep(Duration::from_millis(40));
+        thread::sleep(Duration::from_millis(60));
     }
     println!("");
 }
