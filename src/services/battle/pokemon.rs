@@ -32,7 +32,7 @@ impl PokemonActions for Pokemon {
     /// * `target`    - 攻撃するターゲット
     fn attack(&mut self, skill_idx: usize, target: &mut Pokemon) {
         let skill = match self.skills.get(skill_idx) {
-            Some(skill) => *skill,
+            Some(skill) => skill.clone(),
             None => {
                 eprintln!("Error: Invalid skill index {}", skill_idx);
                 return;
@@ -51,7 +51,7 @@ impl PokemonActions for Pokemon {
         }
 
         // 技の種類を判定
-        match skill.type_ {
+        match skill.class {
             SkillType::PhysicalAttack => {
                 let damage = self.compute_physical_damage(&skill, self, target);
                 target.status.current_hp = target.status.current_hp.saturating_sub(damage);
@@ -249,6 +249,9 @@ impl PokemonActions for Pokemon {
             StatusType::Spd => {
                 target.status.spd.buff += effect_value;
             }
+            StatusType::Field => {
+                todo!()
+            }
         }
 
         // 変更メッセージの表示
@@ -304,6 +307,7 @@ impl ToString for StatusType {
             StatusType::SpAtk => "とくこう".to_string(),
             StatusType::SpDef => "とくぼう".to_string(),
             StatusType::Spd => "すばやさ".to_string(),
+            StatusType::Field => "フィールド技".to_string(),
         }
     }
 }

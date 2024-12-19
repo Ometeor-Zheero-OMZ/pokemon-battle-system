@@ -1,3 +1,3 @@
 pub mod pokemon;
 pub mod trainer;
-pub mod type_;
+pub mod element;

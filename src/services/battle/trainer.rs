@@ -1,4 +1,4 @@
-use crate::{models::trainer::Trainer, Pokemon};
+use crate::models::{pokemon::Pokemon, trainer::Trainer};
 
 #[allow(dead_code)]
 pub trait TrainerActions {
@@ -9,7 +9,7 @@ pub trait TrainerActions {
 impl TrainerActions for Trainer {
     fn new(name: &'static str, pokemons: Vec<Pokemon>) -> Self {
         Trainer {
-            name: name,
+            name,
             pokemons,
             active_pokemon: None,
         }
