@@ -1,5 +1,6 @@
 {
     "0025" : {
+        "id": "0025",
         "name": "ピカチュウ",
         "level": 10,
         "element": ["Electric"],
@@ -33,6 +34,7 @@
         "skills": ["tail_whip", "thunder_shock", "quick_attack", "tackle"]
     },
     "0376" : {
+        "id": "0376",
         "name": "メタグロス",
         "level": 68,
         "element": ["Steel", "Psychic"],
@@ -66,6 +68,7 @@
         "skills": ["bullet_punch", "earthquake", "ice_punch", "psychic_fangs"]
     },
     "0016" : {
+        "id": "0016",
         "name": "ポッポ",
         "level": 8,
         "element": ["Normal", "Flying"],
@@ -99,6 +102,7 @@
         "skills": ["sky_attack", "growl", "quick_attack", "horn_drill"]
     },
     "0130" : {
+        "id": "0130",
         "name": "ギャラドス",
         "level": 44,
         "element": ["Water", "Flying"],
