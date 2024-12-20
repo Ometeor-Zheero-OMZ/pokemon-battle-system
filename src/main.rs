@@ -1,8 +1,9 @@
 use dotenvy::dotenv;
+use test::hard_coded::test;
 use std::{collections::HashMap, env};
 
 use cli::{battle::start_battle, prompt::{select_pokemon, select_trainer}};
-use dto::{pokemon::select_random_enemy_pokemon, trainer::set_trainer};
+use dto::pokemon::select_random_enemy_pokemon;
 use file::json::read_json;
 use models::{pokemon::{Pokemon, PokemonJson, Skill}, trainer::{Trainer, TrainerJson}};
 
@@ -12,27 +13,7 @@ mod file;
 mod logic;
 mod models;
 mod services;
-
-/// データはハードコードで設定
-fn test() {
-    // トレーナーを選択
-    let mut trainers = vec![
-        set_trainer("satoshi"),
-        set_trainer("daigo"),
-        set_trainer("short_pants_boy")
-    ];
-    let mut selected_trainer = select_trainer(&mut trainers);
-
-    // トレーナーが選んだポケモンを選択
-    select_pokemon(&mut selected_trainer);
-
-    // バトルするポケモンを取得
-    let mut enemy_pokemon = select_random_enemy_pokemon();
-    let mut self_pokemon = selected_trainer.active_pokemon.clone().unwrap();
-
-    // バトル開始
-    start_battle(&mut self_pokemon, &mut enemy_pokemon);
-}
+mod test;
 
 /// データはJSONから取得
 fn init() {
@@ -82,7 +63,7 @@ fn init() {
     select_pokemon(&mut selected_trainer);
 
     // バトルするポケモンを取得
-    let mut enemy_pokemon = select_random_enemy_pokemon();
+    let mut enemy_pokemon = select_random_enemy_pokemon(pokemon_data);
     let mut self_pokemon = selected_trainer.active_pokemon.clone().unwrap();
 
     // バトル開始
@@ -94,8 +75,11 @@ fn main() {
     let run_mode: &str = &env::var("RUN_MODE").expect("RUN_MODE が設定されていません。");
 
     match run_mode {
+        // ハードコードしたデータで実行
         "hard_code" => test(),
+        // JSON からデータを取得して実行
         "json" => init(),
+        // バイナリファイルからデータを取得して実行
         "bin" => todo!(),
         _ => unreachable!()
     }

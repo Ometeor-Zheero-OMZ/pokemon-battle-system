@@ -18,6 +18,7 @@ pub struct Pokemon {
 /// 各ポケモンは名前、レベル、ステータス、使用できる技で構成
 #[derive(Deserialize, Serialize, Debug, Clone, PartialEq)]
 pub struct PokemonJson {
+    pub id: String,
     pub name: String,
     pub level: u8,
     pub element: Vec<String>,
