@@ -32,8 +32,6 @@ While engines like Unity allow for richer graphics and easy WebGL deployment, th
 
 This project aims to offer a minimalist implementation of the Pokémon battle system using only Rust, without any external game engine. It is intended as a portfolio piece to showcase basic game architecture, logic structuring, and Rust development skills, particularly in environments where GUI or WebGL is not feasible.
 
----
-
 ## Features
 
 This project supports a variety of basic battle features:
@@ -47,15 +45,11 @@ This project supports a variety of basic battle features:
   - OHKO (One-Hit Knock Out) moves
 - Each move has a probability of success, simulating in-game accuracy mechanics
 
----
-
 ## Technical Implementation
 
 - Rust v1.86
 - Serde v1
 - Serde JSON v1
-
----
 
 ## Building from Source
 
@@ -63,15 +57,11 @@ This project supports a variety of basic battle features:
 cargo build --release
 ```
 
----
-
 ## Usage
 
 ```sh
 ./target/release/pokemon-battle-system
 ```
-
----
 
 ## Future Development
 
@@ -84,13 +74,9 @@ cargo build --release
 - Add a leveling system with experience points and stat progression
 - Enable the use of multiple Pokémon per trainer (party-based battles)
 
----
-
 ## License
 
 <p>MIT License</p>
-
----
 
 ## Author
 
