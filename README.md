@@ -1,5 +1,9 @@
 # Pokemon Battle CLI
 
+![Status](https://img.shields.io/badge/status-in--development-yellow?style=flat-square)
+[![Rust Version](https://img.shields.io/badge/rust-1.86+-blue.svg)](https://www.rust-lang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Overview
 
 While engines like Unity allow for richer graphics and easy WebGL deployment, this project deliberately focuses on building a lightweight, fully offline-compatible Pokémon battle system using pure Rust. The goal is to demonstrate fundamental game system design and command-line architecture using a modern systems programming language.
@@ -90,8 +94,6 @@ cargo build --release
 
 ## Author
 
-**Ometeor-Zherro-OMZ**
+**itsakeyfut**
 
 Feel free to contact me for collaboration or job opportunities.
-
-Feel free to modify any sections to better match your project goals or to add more specific details about functionality as you implement more features. You can also add sections about contribution guidelines, known limitations, or acknowledgments if relevant to your project.
