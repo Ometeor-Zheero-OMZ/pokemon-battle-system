@@ -1,9 +1,9 @@
 [package]
 name = "pokemon-battle-system"
 version = "0.1.0"
-authors = ["Ometeor-Zheero-OMZ <sicsempertyrannis98@gmail.com>"]
+authors = ["itsakeyfut <sicsempertyrannis98@gmail.com>"]
 description = "Emulating pokemon battle system on CLI"
-repository = "https://github.com/Ometeor-Zheero-OMZ/pokemon-battle-system"
+repository = "https://github.com/itsakeyfut/pokemon-battle-system"
 readme = "README.md"
 categories = ["pokemon", "pokemon battle", "battle system", "game"]
 edition = "2024"
